@@ -4,7 +4,7 @@
 
 Documentation pages powered by [MKdocs](https://www.mkdocs.org/) using the 
 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme, 
-and served by [Read the Docs](https://readthedocs.org/).
+and served by [GitHub Pages](https://pages.github.com/).
 
 ## Development
 
@@ -47,17 +47,16 @@ Once you are happy with the documentation, you can build it with:
 mkdocs build
 ```
 
-## Deploying with Read the Docs
+## Deploying with GitHub Pages
 
-The project documentation has been imported to Read the Docs and will build the
+The project documentation is deployed with GitHub Pages and will build the
 pages automatically every time any changes are pushed to this GitHub repository.
-Documentation releases will be generated with release tags later. Read more about 
-[documentatino versioning](https://docs.readthedocs.io/en/stable/versions.html).
+See the [actions](https://github.com/ebi-jdispatcher/documentation/actions) for more detail.
+Documentation releases will be generated with release tags later.
 
 
 ### Useful links
 
-* [Getting started with MkDocs (in Read the Docs)](https://docs.readthedocs.io/en/stable/intro/getting-started-with-mkdocs.html)
 * [Getting started with MkDocs](https://www.mkdocs.org/getting-started/)
 * [Getting started with Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/)
 
