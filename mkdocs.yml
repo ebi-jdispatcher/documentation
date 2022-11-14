@@ -2,6 +2,12 @@ site_name: Job Dispatcher Documentation
 
 theme:
   name: material
+  locale: en
+  # analytics: { gtag: '' }
+  highlightjs: true
+  hljs_languages:
+    - bash
+    - python
 
 nav:
     - 'index.md'
