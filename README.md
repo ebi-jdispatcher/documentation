@@ -49,6 +49,12 @@ mkdocs build
 
 ## Deploying with Read the Docs
 
+The project documentation has been imported to Read the Docs and will build the
+pages automatically every time any changes are pushed to this GitHub repository.
+Documentation releases will be generated with release tags later. Read more about 
+[documentatino versioning](https://docs.readthedocs.io/en/stable/versions.html).
+
+
 ### Useful links
 
 * [Getting started with MkDocs (in Read the Docs)](https://docs.readthedocs.io/en/stable/intro/getting-started-with-mkdocs.html)
