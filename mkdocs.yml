@@ -2,3 +2,6 @@ site_name: Job Dispatcher Documentation
 
 theme:
   name: material
+
+nav:
+    - 'index.md'
