@@ -1,5 +1,6 @@
 site_name: Job Dispatcher Documentation
 
+# TODO later: Setup Google Analytics?
 theme:
   name: material
   locale: en
@@ -8,6 +9,59 @@ theme:
   hljs_languages:
     - bash
     - python
+  favicon: assets/images/favicon.ico
+  logo: assets/images/jd_logo.png
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.sections
+    - navigation.top
+#    - navigation.expand
+#    - navigation.instant
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.integrate
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 nav:
-    - 'index.md'
+    - Home: 'index.md'
+    - Using the webpages:
+      - 'webpages.md'
+      - Available databases: 'databases.md'
+    - Programmatic access:
+        - 'webservices.md'
+    - FAQs:
+      - Bioinformatics FAQs: 'faqs/bioinformatics.md'
+    - Privacy: '/#privacy-notice'
+    - Contact: '/#contact-us'
+
+
+# TODO later: Setup social cards?
+plugins:
+  - search
+#  - social
+
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://wwwdev.ebi.ac.uk/Tools/jdispatcher/
+      name: Job Dispatcher
+    - icon: fontawesome/solid/blog
+      link: https://ebi-jdispatcher.github.io/blog/
+      name: Blog
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ebi_jdispatcher
+      name: Twitter
+
+repo_url: https://github.com/ebi-jdispatcher/documentation
+
+copyright: Copyright &copy; 2022 EMBL-EBI
