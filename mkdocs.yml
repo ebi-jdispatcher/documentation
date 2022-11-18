@@ -41,8 +41,8 @@ nav:
         - 'webservices.md'
     - FAQs:
       - Bioinformatics FAQs: 'faqs/bioinformatics.md'
-    - Privacy: '/#privacy-notice'
-    - Contact: '/#contact-us'
+    - Privacy: '#privacy-notice'
+    - Contact: '#contact-us'
 
 
 # TODO later: Setup social cards?
