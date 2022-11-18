@@ -11,6 +11,8 @@ theme:
     - python
   favicon: assets/images/favicon.ico
   logo: assets/images/jd_logo.png
+  palette:
+    primary: teal
   features:
     - navigation.tabs
     - navigation.tabs.sticky
