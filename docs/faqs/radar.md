@@ -1,6 +1,3 @@
-
-## RADAR FAQs
-
 #### What is RADAR?
 RADAR - Rapid Automatic Detection and Alignment of Repeats in protein sequences - is a tool to identify short composition biased and gapped approximate repeats, as well as complex repeat architectures involving many different types of repeats in a query sequence.
 
