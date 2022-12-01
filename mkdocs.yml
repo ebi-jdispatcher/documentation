@@ -43,7 +43,10 @@ nav:
         - 'webservices.md'
     - FAQs:
       - Bioinformatics FAQs: 'faqs/bioinformatics.md'
-      - Tool Specific FAQs: 'faqs/toolspecific.md'
+      - Clustal Omega FAQs: 'faqs/clustal.md'
+      - Simple Phylogeny FAQs: 'faqs/phylogeny.md'
+      - FASTM FAQs: 'faqs/fastm.md'
+      - PSI-Search FAQs: 'faqs/psisearch.md'
 
 
 # TODO later: Setup social cards?

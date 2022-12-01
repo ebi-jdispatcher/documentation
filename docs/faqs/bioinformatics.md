@@ -1,8 +1,4 @@
-# FAQs
 
-!!! warning
-
-    This page is under development.
 
 #### How many sequences can I align at once?
 Each tool has its own limit, please refer to the relevant webform page for individual tools.
