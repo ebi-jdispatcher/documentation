@@ -48,6 +48,7 @@ nav:
       - FASTM FAQs: 'faqs/fastm.md'
       - RADAR FAQs: 'faqs/radar.md'
       - PSI-Search FAQs: 'faqs/psisearch.md'
+      - EMBOSS Transeq FAQs: 'faqs/transeq.md'
 
 
 # TODO later: Setup social cards?
