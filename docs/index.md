@@ -2,7 +2,7 @@
 
 ## Introduction
 
-[Job Dispatcher](https://wwwdev.ebi.ac.uk/Tools/jdispatcher/) provides various bioinformatics tools and 
+[Job Dispatcher](https://wwwdev.ebi.ac.uk/Tools/jdispatcher/home/) provides various bioinformatics tools and 
 related biological datasets to the scientific user community.
 All our resources can be accessed via the web interface or programmatically. Job Dispatcher also offers
 these resources behind the scenes to power several other popular services hosted at the EBI such as 
