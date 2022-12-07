@@ -61,6 +61,60 @@ Instructions on how to download the clients and how to use them are provided in 
 These clients are generated from the APIs directly with a Python application
 [webservice-clients-generator](https://github.com/ebi-jdispatcher/webservice-clients-generator).
 
+### Running the clients
+
+[Download](https://github.com/ebi-wp/webservice-clients/archive/master.zip) the clients or clone the repository:
+
+
+``` py title="Clone the repository"
+git clone https://github.com/ebi-wp/webservice-clients.git
+```
+#### Perl clients
+
+In order to run Perl clients, Perl (tested version 5.22.0) needs to installed as well as Perl dependencies. 
+Install dependencies with:
+
+``` py title="To install Perl dependencies run (you might need sudo)"
+cpan LWP
+cpan XML::Simple
+cpan YAML::Syck
+```
+
+``` perl title="An example test for Clustal Omega Perl client"
+perl clustalo.pl --email <your@email.com> --sequence sp:wap_rat,sp:wap_mouse,sp:wap_pig
+```
+
+#### Python clients
+
+Specially if you have no root access to your machine, you might need to use virtualenv. Prepare a virtual environment where all the Python (tested version 3.6.5) dependencies will be installed.
+
+``` py
+virtualenv -p `which python` env
+source ./env/bin/activate
+```
+
+``` py title="Install dependencies with"
+pip install --upgrade pip xmltramp2 requests
+```
+
+``` py title="An example test for Clustal Omega Python client"
+python clustalo.py --email <your@email.com> --sequence sp:wap_rat,sp:wap_mouse,sp:wap_pig
+```
+
+#### Java clients
+
+In order to run Java clients, OpenJDK 8 (tested version 1.8.0_161") as well as ant (tested version 1.10.5), needs to installed. Note OpenJDK 9 and above are currently not supported.
+The clients are provided here as self-contained JAR files. (The source code is available in the [webservice-clients-generator repository](https://github.com/ebi-wp/webservice-clients-generator)). 
+To run them on all platforms, an example for the Clustal Omega Java client is:
+``` java
+java -jar clustalo.jar --email <your@email.com> --sequence sp:wap_rat,sp:wap_mouse,sp:wap_pig
+```
+
+On Linux and OSX you can use the simpler:
+
+``` java 
+./clustalo.jar --email <your@email.com> --sequence sp:wap_rat,sp:wap_mouse,sp:wap_pig
+```
 ## Docker
 
 [Docker](https://www.docker.com/) is a set of platform as a service product that use OS-level virtualization 
@@ -88,3 +142,5 @@ Example clients and CWL files are provided for programmatically accessing Dbfetc
 
 Additional information on how to retrieve entries from Dbfetch programmatic is provided on the
 [Dbfetch URL Synthax](https://www.ebi.ac.uk/Tools/dbfetch/syntax.jsp) page.
+
+
