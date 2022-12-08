@@ -1,0 +1,1002 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Simple Phylogeny FAQs - Job Dispatcher Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.472b142f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.08040f6c.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#009485">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#simple-phylogeny-faqs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Job Dispatcher Documentation" class="md-header__button md-logo" aria-label="Job Dispatcher Documentation" data-md-component="logo">
+      
+  <img src="../../assets/images/jd_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Job Dispatcher Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Simple Phylogeny FAQs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ebi-jdispatcher/documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../webpages/" class="md-tabs__link">
+        Using the webpages
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../webservices/" class="md-tabs__link">
+        Programmatic access
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../bioinformatics/" class="md-tabs__link md-tabs__link--active">
+        FAQs
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Job Dispatcher Documentation" class="md-nav__button md-logo" aria-label="Job Dispatcher Documentation" data-md-component="logo">
+      
+  <img src="../../assets/images/jd_logo.png" alt="logo">
+
+    </a>
+    Job Dispatcher Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ebi-jdispatcher/documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Using the webpages
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Using the webpages" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Using the webpages
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webpages/" class="md-nav__link">
+        Getting started with the webforms
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../databases/" class="md-nav__link">
+        Available databases
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../formats/" class="md-nav__link">
+        Example formats
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Programmatic access
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Programmatic access" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Programmatic access
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webservices/" class="md-nav__link">
+        Getting started with programmatic access
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          FAQs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="FAQs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          FAQs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bioinformatics/" class="md-nav__link">
+        Bioinformatics FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clustal/" class="md-nav__link">
+        Clustal Omega FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Simple Phylogeny FAQs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Simple Phylogeny FAQs
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-simple-phylogeny" class="md-nav__link">
+    What is Simple Phylogeny?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-is-simple-phylogeny-useful" class="md-nav__link">
+    Why is Simple Phylogeny useful?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-use-simple-phylogeny" class="md-nav__link">
+    How can I use Simple Phylogeny?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-version-of-simple-phylogeny-is-run-at-embl-ebi" class="md-nav__link">
+    What version of Simple Phylogeny is run at EMBL-EBI?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-reference-use-of-simple-phylogeny-at-embl-ebi" class="md-nav__link">
+    How do I reference use of Simple Phylogeny at EMBL-EBI?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-inputs-does-simple-phylogeny-accept" class="md-nav__link">
+    What inputs does Simple Phylogeny accept?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-input-multiple-sequences-into-a-single-box" class="md-nav__link">
+    How do I input multiple sequences into a single box?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-there-a-limit-on-the-number-of-sequences-or-the-size-of-the-file-that-i-submit-to-simple-phylogeny" class="md-nav__link">
+    Is there a limit on the number of sequences or the size of the file that I submit to Simple Phylogeny?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-can-i-find-information-on-the-different-parametersoptions" class="md-nav__link">
+    Where can I find information on the different parameters/options?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-do-i-get-a-minimum-2-sequences-required-error" class="md-nav__link">
+    Why do I get a 'minimum 2 sequences required' error?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-do-i-get-a-two-sequences-cannot-share-the-same-identifier-error" class="md-nav__link">
+    Why do I get a 'Two sequences cannot share the same identifier' error?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-entry-found-which-does-not-contain-a-sequence-mean" class="md-nav__link">
+    What does 'Entry found which does not contain a sequence' mean?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-does-simple-phylogeny-truncate-my-identifier" class="md-nav__link">
+    Why does Simple Phylogeny truncate my identifier?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-apply-distance-correction-to-my-tree" class="md-nav__link">
+    How can I apply distance correction to my tree?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-outputs-does-simple-phylogeny-produce" class="md-nav__link">
+    What outputs does Simple Phylogeny produce?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-downloadsave-the-phylogenetic-tree" class="md-nav__link">
+    How do I download/save the phylogenetic tree?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-view-my-tree-after-ive-downloaded-it" class="md-nav__link">
+    How can I view my tree after I've downloaded it?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#im-using-internet-explorer-9-and-why-arent-my-button-presses-working" class="md-nav__link">
+    I'm using Internet Explorer 9 and why aren't my button presses working?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-see-distance-valuesbranch-lengths-on-my-tree" class="md-nav__link">
+    How can I see distance values/branch lengths on my tree?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-units-are-the-distance-values" class="md-nav__link">
+    What units are the distance values?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#can-i-add-bootstrap-values-to-my-tree" class="md-nav__link">
+    Can I add bootstrap values to my tree?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-difference-between-a-cladogram-and-a-phylogram" class="md-nav__link">
+    What is the difference between a cladogram and a phylogram?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-long-are-results-stored-at-embl-ebi" class="md-nav__link">
+    How long are results stored at EMBL-EBI?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-do-i-get-a-raw-tool-output-page" class="md-nav__link">
+    Why do I get a 'Raw Tool Output' page?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-do-i-get-a-job-not-found-page" class="md-nav__link">
+    Why do I get a 'Job not found' page?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-do-i-see-java-is-required" class="md-nav__link">
+    Why do I see 'Java is required'?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fastm/" class="md-nav__link">
+        FASTM FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../radar/" class="md-nav__link">
+        RADAR FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../psisearch/" class="md-nav__link">
+        PSI-Search FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transeq/" class="md-nav__link">
+        EMBOSS Transeq FAQs
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/ebi-jdispatcher/documentation/edit/master/docs/faqs/phylogeny.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="simple-phylogeny-faqs">Simple Phylogeny FAQs</h1>
+<h4 id="what-is-simple-phylogeny">What is Simple Phylogeny?</h4>
+<p>Simple Phylogeny is a tool to perform basic phylogenetic analysis on a multiple sequence alignment.</p>
+<h4 id="why-is-simple-phylogeny-useful">Why is Simple Phylogeny useful?</h4>
+<p>Phylogenetics aims to model the substitutions that have occured over evolutionary time and derive and represent the evolutionary relationships between sequences.</p>
+<h4 id="how-can-i-use-simple-phylogeny">How can I use Simple Phylogeny?</h4>
+<p>The Simple Phylogeny web form is available <a href="http://www.ebi.ac.uk/Tools/phylogeny/simple_phylogeny/">here</a>. There are two ways to use this service at EMBL-EBI. The first is interactively (default) and the second is by email. Using it interactively, the user must wait for the results to be displayed in the browser window. The email option means that the results will not be displayed in the browser window but instead a link to the results will be sent by email. The email option is the better one to take when submitting large amounts of data or a job that might take a long time to run. </p>
+<h4 id="what-version-of-simple-phylogeny-is-run-at-embl-ebi">What version of Simple Phylogeny is run at EMBL-EBI?</h4>
+<p>We run Simple Phylogeny from the ClustalW2 package at EMBL-EBI, for the precise version number go to the submission details tab from your job results.</p>
+<h4 id="how-do-i-reference-use-of-simple-phylogeny-at-embl-ebi">How do I reference use of Simple Phylogeny at EMBL-EBI?</h4>
+<p>Please cite use of Simple Phylogeny at our website with the following: </p>
+<p><code>ClustalW and ClustalX version 2 (2007)Larkin MA, Blackshields G, Brown NP, Chenna R, McGettigan PA, McWilliam H, Valentin F, Wallace IM, Wilm A, Lopez R, Thompson JD, Gibson TJ and Higgins DGBioinformatics 2007 23(21): 2947-2948.</code> </p>
+<p><code>A new bioinformatics analysis tools framework at EMBL-EMBL-EBI (2010)Goujon M, McWilliam H, Li W, Valentin F, Squizzato S, Paern J, Lopez RNucleic acids research 2010 Jul, 38 Suppl: W695-9</code> </p>
+<p>Programmatic use via Web Services should cite:</p>
+<p><code>Search and sequence analysis tools services from EMBL-EBI in 2022. (2022) Madeira F, Pearce M, Tivey, ARN, Basutkar P, Lee J, Edbali O, Madhusoodanan N, Kolesnikov A, Lopez R Nucleic acids research 2022; Jul;50:W276–W279</code> <a href="https://doi.org/10.1093/nar/gkac240">DOI: 10.1093/nar/gkac240</a></p>
+<h4 id="what-inputs-does-simple-phylogeny-accept">What inputs does Simple Phylogeny accept?</h4>
+<p>The program accepts protein multiple sequence alignments, in the following multiple sequence formats:</p>
+<p>Pearson (FASTA)
+ALN/ClustalW
+GCG/MSF
+RSF (see the Clustal help pages for details about formats)
+Please note GenBank (from NCBI) or raw sequence data will not work with Simple Phylogeny. If using sequences from NCBI be sure to save them as FASTA format first.</p>
+<p>The sequences can either be pasted into the web form or uploaded to the web form in a file. It is very important that each of the sequences has a unique name. If they do not, the program will fail. There must be no empty lines, white spaces or control characters between sequences or at the top of the file. This will also cause the program to fail.</p>
+<h4 id="how-do-i-input-multiple-sequences-into-a-single-box">How do I input multiple sequences into a single box?</h4>
+<p>Paste the sequences in an accepted format into the same box: Simple Phylogeny accepts multiple sequence formats as input - these formats allow for multiple sequences to be placed in the same file or input box, as they each contain ways for Simple Phylogeny to distinguish where new sequences start. It is important to use correctly formated sequences for this reason.</p>
+<h4 id="is-there-a-limit-on-the-number-of-sequences-or-the-size-of-the-file-that-i-submit-to-simple-phylogeny">Is there a limit on the number of sequences or the size of the file that I submit to Simple Phylogeny?</h4>
+<p>The input for Simple Phylogeny is limited to a maximum of 500 sequences or to a 1MB file (whichever is smaller). When the input file or the number of sequences is large, Simple Phylogeny can run for days and in some cases may not finish at all. If you plan to input large amounts of data/sequences you should use the email results option. For batch runs of Simple Phylogeny see our <a href="https://ebi-jdispatcher.github.io/documentation/webservices/">programmatic access page</a>.</p>
+<h4 id="where-can-i-find-information-on-the-different-parametersoptions">Where can I find information on the different parameters/options?</h4>
+<p>The parameter settings are in the box below the sequence input. Clicking on the parameter name will take you to the relevant help information.</p>
+<h4 id="why-do-i-get-a-minimum-2-sequences-required-error">Why do I get a 'minimum 2 sequences required' error?</h4>
+<p>This occurs when something is wrong with your sequence input. It is often caused by using a sequence format not supported by Simple Phylogeny, or a problem with the formatting for example sequence data not being on a newline from the sequence header line. Simple Phylogeny requires sequences to be formatted, not just raw sequence data.</p>
+<p>Information about sequence formats can be found at the <a href="http://emboss.sourceforge.net/docs/themes/SequenceFormats.html">EMBOSS sequence formats guide</a>. If you're not sure, try using FASTA format. You can also use tools like <a href="https://www.ebi.ac.uk/Tools/misc.html">Readseq</a> to convert between sequence formats.
+top</p>
+<h4 id="why-do-i-get-a-two-sequences-cannot-share-the-same-identifier-error">Why do I get a 'Two sequences cannot share the same identifier' error?</h4>
+<p>Simple Phylogeny needs unique sequence identifiers, which it defines as the first word on the sequence identifier line. Check that you've not got a duplicate identifier somewhere in the input, that you're not using spaces or tabs in your identifiers, and that the first 30 characters of your identifier are unique if using Clustal format files.</p>
+<h4 id="what-does-entry-found-which-does-not-contain-a-sequence-mean">What does 'Entry found which does not contain a sequence' mean?</h4>
+<p>Simple Phylogeny produces this error when it can't find the sequence data to go with a sequence identifier. This can happen if sequence data is missing from the input or the data is on the same line as the header - make sure the sequence data is on a new line.</p>
+<h4 id="why-does-simple-phylogeny-truncate-my-identifier">Why does Simple Phylogeny truncate my identifier?</h4>
+<p>Clustal file format (.aln) truncates sequence identifiers to 30 characters - this may also affect the ability of the job to run if the first 30 characters are not unique.</p>
+<h4 id="how-can-i-apply-distance-correction-to-my-tree">How can I apply distance correction to my tree?</h4>
+<p>By default no distance correction is applied. Using the 'Distance Correction' option you can apply distance correction to phylogenetic trees. The distance correction method is Kimura:</p>
+<p><code>A simple method for estimating evolutionary rates of base substitutions through comparative studies of nucleotide sequences.(1980)Kimura MJournal of Molecular Evolution 1980 16:111120.</code></p>
+<p>More information about this and other evolutionary models for DNA substitution can be found at Wikipedia: <a href="http://en.wikipedia.org/wiki/Models_of_DNA_evolution#K80_model_.28Kimura.2C_1980.29.5B2.5D">Models of DNA evolution, Kimura</a>.</p>
+<h4 id="what-outputs-does-simple-phylogeny-produce">What outputs does Simple Phylogeny produce?</h4>
+<p>Simple Phylogeny produces several outputs, depending on the options you selected when submitting the job. By default the main output is a phylogenetic tree, with both the tree data (Newick format) and an image representation of the tree. Other outputs can be viewed/downloaded in the results summary tab.</p>
+<h4 id="how-do-i-downloadsave-the-phylogenetic-tree">How do I download/save the phylogenetic tree?</h4>
+<p>The tree data can be saved by clicking the 'View Phylogetic Tree file' button or by clicking the tree link in the Results Summary tab. Using this data you can recreate the tree in any tree viewing software that takes Newick format tree data.</p>
+<p>The tree image cannot be saved directly as it is a dynamic Java-driven interface, however you can take a screenshot and then save this in an image editing program, or as mentioned above use the tree data to recreate the tree in another tree viewing program and save it from there.</p>
+<h4 id="how-can-i-view-my-tree-after-ive-downloaded-it">How can I view my tree after I've downloaded it?</h4>
+<p>The tree data is in the widely used Newick format, there are several online or standalone tree viewing programs available that can take this and recreate the tree from this data.</p>
+<h4 id="im-using-internet-explorer-9-and-why-arent-my-button-presses-working">I'm using Internet Explorer 9 and why aren't my button presses working?</h4>
+<p>Unfortunately there is a compatibility problem with Internet Explorer 9 and some of the ways we create drop down menus on our website. This has the occasional side effect of making it impossible to click on buttons for example to change to a different results tab, or show colours. If you experience difficulties we recommend firstly trying the compatibility view icon on the URL bar of Internet Explorer. If this doesn't work please try another browser.</p>
+<h4 id="how-can-i-see-distance-valuesbranch-lengths-on-my-tree">How can I see distance values/branch lengths on my tree?</h4>
+<p>Unfortunately we can't display a scale bar or branch lengths on the branches themselves, however the show distances button will add distance values to the node label. These show the length of the branch immediately leading to the node. Interbranch distances are not shown on the tree, but can be seen in the tree data file.</p>
+<h4 id="what-units-are-the-distance-values">What units are the distance values?</h4>
+<p>The distance values show the number of substitutions (nucleotides or amino acid residues) as a proportion of the length of the alignment (excluding gaps). These numbers represent the amount of genetic change.Generally, the larger the number, the larger the amount of genetic change. </p>
+<h4 id="can-i-add-bootstrap-values-to-my-tree">Can I add bootstrap values to my tree?</h4>
+<p>We do not allow bootstrap analysis of phylogenetic trees for throughput reasons. If you wish to perform a more rigorous phylogenetic analysis we recommend using a different tool.</p>
+<h4 id="what-is-the-difference-between-a-cladogram-and-a-phylogram">What is the difference between a cladogram and a phylogram?</h4>
+<p>A phylogram is a branching diagram (tree) that is assumed to be an estimate of a phylogeny. The branch lengths are proportional to the amount of inferred evolutionary change. A cladogram is a branching diagram (tree) assumed to be an estimate of a phylogeny where the branches are of equal length. Therefore, cladograms show common ancestry, but do not indicate the amount of evolutionary "time" separating taxa. It is possible to see the tree distances by clicking on the diagram to get a menu of options. The options available allow you to do things like changing the colours of lines and fonts and showing the distances.</p>
+<h4 id="how-long-are-results-stored-at-embl-ebi">How long are results stored at EMBL-EBI?</h4>
+<p>Results are stored at EMBL-EBI for a week from the date of job submission.</p>
+<h4 id="why-do-i-get-a-raw-tool-output-page">Why do I get a 'Raw Tool Output' page?</h4>
+<p>This happens when we can't parse the results of your Simple Phylogeny job - usually because the job has failed for some reason. Have a look at the links on the page, especially the Tool Error Details, for clues as to why this might have happened, and check your input for errors.</p>
+<h4 id="why-do-i-get-a-job-not-found-page">Why do I get a 'Job not found' page?</h4>
+<p>This happens when we can't find the job that you have requested. Normally it's a result of trying to look at the page over a week after the job was submitted, so the data is no longer available at EMBL-EBI. If you've copied the URL from a recent email job, check for any mistakes in the link.</p>
+<h4 id="why-do-i-see-java-is-required">Why do I see 'Java is required'?</h4>
+<p>The phylogenetic tree representation requires Java to work properly. If Java isn't installed with your browser or it doesn't have permission to run (for example it has been disabled due to being out of date) then there may be some results options missing.</p>
+<p>To update your version of Java go to the <a href="https://java.com/en/download/index.jsp">Java.com download page</a>.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../clustal/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Clustal Omega FAQs" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Clustal Omega FAQs
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../fastm/" class="md-footer__link md-footer__link--next" aria-label="Next: FASTM FAQs" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              FASTM FAQs
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 EMBL-EBI
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://wwwdev.ebi.ac.uk/Tools/jdispatcher/" target="_blank" rel="noopener" title="Job Dispatcher" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.4c2.2 20.4 3.3 41.8 3.3 64zm28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 21 58.2 27 94.7zm-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6zM8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zm186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6h116.7zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.6z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://ebi-jdispatcher.github.io/blog/" target="_blank" rel="noopener" title="Blog" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M192 32c0 17.7 14.3 32 32 32 123.7 0 224 100.3 224 224 0 17.7 14.3 32 32 32s32-14.3 32-32C512 128.9 383.1 0 224 0c-17.7 0-32 14.3-32 32zm0 96c0 17.7 14.3 32 32 32 70.7 0 128 57.3 128 128 0 17.7 14.3 32 32 32s32-14.3 32-32c0-106-86-192-192-192-17.7 0-32 14.3-32 32zm-96 16c0-26.5-21.5-48-48-48S0 117.5 0 144v224c0 79.5 64.5 144 144 144s144-64.5 144-144-64.5-144-144-144h-16v96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48V144z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://twitter.com/ebi_jdispatcher" target="_blank" rel="noopener" title="Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.sections", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.integrate"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      
+    
+  </body>
+</html>

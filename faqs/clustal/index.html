@@ -1,0 +1,1067 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Clustal Omega FAQs - Job Dispatcher Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.472b142f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.08040f6c.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#009485">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#why-is-clustal-omega-useful" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Job Dispatcher Documentation" class="md-header__button md-logo" aria-label="Job Dispatcher Documentation" data-md-component="logo">
+      
+  <img src="../../assets/images/jd_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Job Dispatcher Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Clustal Omega FAQs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ebi-jdispatcher/documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../webpages/" class="md-tabs__link">
+        Using the webpages
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../webservices/" class="md-tabs__link">
+        Programmatic access
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../bioinformatics/" class="md-tabs__link md-tabs__link--active">
+        FAQs
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Job Dispatcher Documentation" class="md-nav__button md-logo" aria-label="Job Dispatcher Documentation" data-md-component="logo">
+      
+  <img src="../../assets/images/jd_logo.png" alt="logo">
+
+    </a>
+    Job Dispatcher Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ebi-jdispatcher/documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Using the webpages
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Using the webpages" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Using the webpages
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webpages/" class="md-nav__link">
+        Getting started with the webforms
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../databases/" class="md-nav__link">
+        Available databases
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../formats/" class="md-nav__link">
+        Example formats
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Programmatic access
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Programmatic access" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Programmatic access
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webservices/" class="md-nav__link">
+        Getting started with programmatic access
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          FAQs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="FAQs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          FAQs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bioinformatics/" class="md-nav__link">
+        Bioinformatics FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Clustal Omega FAQs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Clustal Omega FAQs
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-is-clustal-omega-useful" class="md-nav__link">
+    Why is Clustal Omega useful?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-use-clustal-omega" class="md-nav__link">
+    How can I use Clustal Omega?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-version-of-clustal-omega-is-run-at-embl-ebi" class="md-nav__link">
+    What version of Clustal Omega is run at EMBL-EBI?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-reference-use-of-clustal-omega-at-embl-ebi" class="md-nav__link">
+    How do I reference use of Clustal Omega at EMBL-EBI?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-inputs-does-clustal-omega-accept" class="md-nav__link">
+    What inputs does Clustal Omega accept?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-input-multiple-sequences-into-a-single-box" class="md-nav__link">
+    How do I input multiple sequences into a single box?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-there-a-limit-on-the-number-of-sequences-or-the-size-of-the-file-that-i-submit-to-clustal-omega" class="md-nav__link">
+    Is there a limit on the number of sequences or the size of the file that I submit to Clustal Omega?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-a-stream-closed-error-mean" class="md-nav__link">
+    What does a 'stream closed' error mean?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-can-i-find-information-on-the-different-parametersoptions" class="md-nav__link">
+    Where can I find information on the different parameters/options?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-substitution-matrixdefault-parameters-are-used-by-clustal-omega" class="md-nav__link">
+    What substitution matrix/default parameters are used by Clustal Omega?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-best-settings-for-aligning-two-sequences" class="md-nav__link">
+    What are the best settings for aligning two sequences?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-do-i-get-a-minimum-2-sequences-required-error" class="md-nav__link">
+    Why do I get a 'minimum 2 sequences required' error?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-do-i-get-a-two-sequences-cannot-share-the-same-identifier-error" class="md-nav__link">
+    Why do I get a 'Two sequences cannot share the same identifier' error?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-entry-found-which-does-not-contain-a-sequence-mean" class="md-nav__link">
+    What does 'Entry found which does not contain a sequence' mean?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-does-clustal-omega-truncate-my-identifier" class="md-nav__link">
+    Why does Clustal Omega truncate my identifier?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-outputs-does-clustal-omega-produce" class="md-nav__link">
+    What outputs does Clustal Omega produce?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-see-alignments-with-numbers" class="md-nav__link">
+    How do I see alignments with numbers?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-download-the-alignment" class="md-nav__link">
+    How do I download the alignment?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-view-my-alignment-after-ive-downloaded-it" class="md-nav__link">
+    How can I view my alignment after I've downloaded it?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-are-there-no-pairwise-scores-for-clustal-omega" class="md-nav__link">
+    Why are there no pairwise scores for Clustal Omega?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-see-the-guide-tree-for-clustal-omega" class="md-nav__link">
+    How do I see the guide tree for Clustal Omega?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-downloadsave-the-phylogenetic-tree" class="md-nav__link">
+    How do I download/save the phylogenetic tree?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-view-my-tree-after-ive-downloaded-it" class="md-nav__link">
+    How can I view my tree after I've downloaded it?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-long-are-results-stored-at-embl-ebi" class="md-nav__link">
+    How long are results stored at EMBL-EBI?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-do-the-consensus-symbols-mean-in-the-alignment" class="md-nav__link">
+    What do the consensus symbols mean in the alignment?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-do-i-get-a-raw-tool-output-page" class="md-nav__link">
+    Why do I get a 'Raw Tool Output' page?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-do-i-get-a-job-not-found-page" class="md-nav__link">
+    Why do I get a 'Job not found' page?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-do-i-see-java-is-required" class="md-nav__link">
+    Why do I see 'Java is required'?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-the-error-click-message-mean-in-the-jalview-box" class="md-nav__link">
+    What does the 'Error. Click' message mean in the Jalview box?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-interpret-the-resultant-tree" class="md-nav__link">
+    How to interpret the resultant tree?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phylogeny/" class="md-nav__link">
+        Simple Phylogeny FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fastm/" class="md-nav__link">
+        FASTM FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../radar/" class="md-nav__link">
+        RADAR FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../psisearch/" class="md-nav__link">
+        PSI-Search FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transeq/" class="md-nav__link">
+        EMBOSS Transeq FAQs
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/ebi-jdispatcher/documentation/edit/master/docs/faqs/clustal.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+  <h1>Clustal Omega FAQs</h1>
+
+<h4 id="why-is-clustal-omega-useful">Why is Clustal Omega useful?</h4>
+<p>Aligning multiple sequences highlights areas of similarity which may be associated with specific features that have been more highly conserved than other regions. These regions in turn can help classify sequences or to inform experiment design. </p>
+<p>Multiple sequence alignment is also an important step for phylogenetic analysis, which aims to model the substitutions that have occured over evolution and derive the evolutionary relationships between sequences. </p>
+<p>Clustal Omega improves on ClustalW in a number of ways - alignment accuracy and improved scaling to many sequences are the main results. </p>
+<h4 id="how-can-i-use-clustal-omega">How can I use Clustal Omega?</h4>
+<p>The Clustal Omega multiple sequence alignment web form is available <a href="http://www.ebi.ac.uk/Tools/msa/clustalo/">here</a>. There are two ways to use this service at EMBL-EBI. The first is interactively (default) and the second is by email. Using it interactively, the user must wait for the results to be displayed in the browser window. The email option means that the results will not be displayed in the browser window but instead a link to the results will be sent by email. The email option is the better one to take when submitting large amounts of data or a job that might take a long time to run. </p>
+<h4 id="what-version-of-clustal-omega-is-run-at-embl-ebi">What version of Clustal Omega is run at EMBL-EBI?</h4>
+<p>For the precise version number of Clustal Omega being run please go to the submission details tab from your job results. </p>
+<h4 id="how-do-i-reference-use-of-clustal-omega-at-embl-ebi">How do I reference use of Clustal Omega at EMBL-EBI?</h4>
+<p>Please cite use of Clustal Omega with the following:</p>
+<p><code>Fast, scalable generation of high-quality protein multiple sequence alignments using Clustal Omega Sievers F, Wilm A, Dineen DG, Gibson TJ, Karplus K, Li W, Lopez R, McWilliam H, Remmert M, Söding J, Thompson JD, Higgins D Molecular Systems Biology 7 Article number: 539</code> <a href="https://dx.doi.org/10.1038/msb.2011.75">doi:10.1038/msb.2011.75</a></p>
+<p><code>A new bioinformatics analysis tools framework at EMBL-EBI (2010) Goujon M, McWilliam H, Li W, Valentin F, Squizzato S, Paern J, Lopez R Nucleic acids research 2010 Jul, 38 Suppl: W695-9</code> <a href="https://dx.doi.org/10.1093/nar/gkq313">doi:10.1093/nar/gkq313</a> </p>
+<p>Programmatic use via Web Services should cite:
+<code>Search and sequence analysis tools services from EMBL-EBI in 2022. (2022) Madeira F, Pearce M, Tivey, ARN, Basutkar P, Lee J, Edbali O, Madhusoodanan N, Kolesnikov A, Lopez R Nucleic acids research 2022; Jul;50:W276–W279</code> <a href="https://doi.org/10.1093/nar/gkac240">DOI: 10.1093/nar/gkac240</a></p>
+<h4 id="what-inputs-does-clustal-omega-accept">What inputs does Clustal Omega accept?</h4>
+<p>The program accepts nucleic acid or protein sequences, in the following multiple sequence formats:</p>
+<p>NBRF/PIR
+EMBL/UniProt
+Pearson (FASTA)
+GDE
+ALN/Clustal
+GCG/MSF
+RSF </p>
+<p>Please note raw sequence data (just the sequence with no recognised formatting) will not work with Clustal Omega. If using sequences from NCBI we recommend saving them as FASTA format first. Sequence format conversion tools are available [here] (http://www.ebi.ac.uk/Tools/sfc/).</p>
+<p>Very long or badly aligning nucleotide sequences (so that the alignment approaches 100k characters in length) may cause Clustal Omega to fail.</p>
+<p>The sequences can either be pasted into the web form or uploaded to the web form in a file. It is very important that each of the sequences has a unique name. If they do not, the program will fail. There must be no empty lines, white spaces or control characters between sequences or at the top of the file. This will also cause the program to fail.</p>
+<h4 id="how-do-i-input-multiple-sequences-into-a-single-box">How do I input multiple sequences into a single box?</h4>
+<p>Paste the sequences in an accepted format into the same box: Clustal Omega accepts multiple sequence formats as input - these formats allow for multiple sequences to be placed in the same file or input box, as they each contain ways for Clustal Omega to distinguish where new sequences start. It is important to use correctly formated sequences for this reason.</p>
+<h4 id="is-there-a-limit-on-the-number-of-sequences-or-the-size-of-the-file-that-i-submit-to-clustal-omega">Is there a limit on the number of sequences or the size of the file that I submit to Clustal Omega?</h4>
+<p>The input for Clustal Omega is limited to a maximum of 4000 sequences or to a 4MB file (whichever is smaller). If you need to align higher than this number of sequences/a larger file we recommended you download Clustal Omega and run it locally. When the input file or the number of sequences is large, Clustal Omega can run for days and in some cases may not finish at all - we recommend use of the email results option for long running jobs. To use Clustal Omega in a batch/scripted fashion please see our <a href="https://ebi-jdispatcher.github.io/documentation/webservices/">programmatic accss page</a> </p>
+<h4 id="what-does-a-stream-closed-error-mean">What does a 'stream closed' error mean?</h4>
+<p>This error sometimes occurs if you try to upload a really large input to our tools, far in excess of the limits described above. Make sure your input falls within the previously described limits. </p>
+<h4 id="where-can-i-find-information-on-the-different-parametersoptions">Where can I find information on the different parameters/options?</h4>
+<p>To view parameter settings for Clustal Omega click the 'More options' buttons. Clicking on the parameter name will take you to the relevant help information. </p>
+<h4 id="what-substitution-matrixdefault-parameters-are-used-by-clustal-omega">What substitution matrix/default parameters are used by Clustal Omega?</h4>
+<p>Clustal Omega uses the HHalign algorithm and its default settings as its core alignment engine. The algorithm is described in Söding, J. (2005) 'Protein homology detection by HMM–HMM comparison'. Bioinformatics 21, 951-960.</p>
+<p>The default transition matrix is Gonnet, gap opening penalty is 6 bits, gap extension is 1 bit. </p>
+<h4 id="what-are-the-best-settings-for-aligning-two-sequences">What are the best settings for aligning two sequences?</h4>
+<p>Trick question! Multiple sequence alignment tools like Clustal Omega are designed to align three or more sequences. To align two sequences you should use our <a href="http://www.ebi.ac.uk/Tools/psa/">pairwise alignment tools</a></p>
+<h4 id="why-do-i-get-a-minimum-2-sequences-required-error">Why do I get a 'minimum 2 sequences required' error?</h4>
+<p>This occurs when something is wrong with your sequence input. It is often caused by using a sequence format not supported by Clustal Omega, or a problem with the formatting for example sequence data not being on a newline from the sequence header line. Clustal Omega requires sequences to be formatted, not just raw sequence data.</p>
+<p>Information about sequence formats can be found at the <a href="http://emboss.sourceforge.net/docs/themes/SequenceFormats.html">EMBOSS sequence formats guide</a>. If you're not sure, try using FASTA format. Sequence format conversion tools are available <a href="http://www.ebi.ac.uk/Tools/sfc/">here</a>. </p>
+<h4 id="why-do-i-get-a-two-sequences-cannot-share-the-same-identifier-error">Why do I get a 'Two sequences cannot share the same identifier' error?</h4>
+<p>Clustal Omega needs unique sequence identifiers, which it defines as the first word on the sequence identifier line. Check that you've not got a duplicate identifier somewhere in the input, that you're not using spaces or tabs in your identifiers, and that the first 30 characters of your identifier are unique if using Clustal format files. </p>
+<h4 id="what-does-entry-found-which-does-not-contain-a-sequence-mean">What does 'Entry found which does not contain a sequence' mean?</h4>
+<p>Clustal Omega produces this error when it can't find the sequence data to go with a sequence identifier. This can happen if sequence data is missing from the input or the data is on the same line as the header - make sure the sequence data is on a new line. </p>
+<h4 id="why-does-clustal-omega-truncate-my-identifier">Why does Clustal Omega truncate my identifier?</h4>
+<p>The default output format (ALN/Clustal format) truncates sequence identifiers to 30 characters - this may also affect the ability of the job to run if the first 30 characters are not unique. The PHYLIP format truncates even more restrictively, to 10 characters. To prevent truncation change the output format to a type that does not have a limit, such as pearson/FASTA. </p>
+<h4 id="what-outputs-does-clustal-omega-produce">What outputs does Clustal Omega produce?</h4>
+<p>Clustal Omega produces several outputs, depending on the options you selected when submitting the job. By default the main output is the alignment file. A simple phylogenetic tree (via neighbour joining) can be found in the Phylogenetic Tree tab. A pairwise identity scores matrix and other outputs can be viewed/downloaded in the Results Summary tab. </p>
+<h4 id="how-do-i-see-alignments-with-numbers">How do I see alignments with numbers?</h4>
+<p>By default, Clustal Omega outputs Clustal format alignments without numbering, to change this simply click 'more options' and change the output alignment format to 'Clustal w/ numbers'.</p>
+<h4 id="how-do-i-download-the-alignment">How do I download the alignment?</h4>
+<p>The quickest way to download the alignment is to click the 'Download Alignment File' button in the alignments tab of the results. You can view all the files that are produced on the 'Results Summary' tab, which includes the tool output and any guide tree files as well as the alignment file. Colours are not saved as part of the alignment.</p>
+<h4 id="how-can-i-view-my-alignment-after-ive-downloaded-it">How can I view my alignment after I've downloaded it?</h4>
+<p>The alignment will be in the format you specified in the input section, or Clustal by default if you didn't specify anything. They are all text files, so can be opened in any text viewing program that can deal with unix text characters (end of line characters for example). In Windows you can use NotePad.</p>
+<p>More specialist tools are available to investigate alignments and allow you to mark them up with colours for example. <a href="http://www.nrbsc.org/gfx/genedoc/">Genedoc</a> and <a href="http://www.jalview.org/">Jalview</a> are two such tools.</p>
+<h4 id="why-are-there-no-pairwise-scores-for-clustal-omega">Why are there no pairwise scores for Clustal Omega?</h4>
+<p>Clustal Omega uses a different method to calculate the guide tree compared to ClustalW, so we do not output the rough all-against-all pairwise alignment scores used to guide the alignment (as they don't exist). However we do calculate a pairwise identity matrix from the results, which can be downloaded from the Results Summary tab.</p>
+<h4 id="how-do-i-see-the-guide-tree-for-clustal-omega">How do I see the guide tree for Clustal Omega?</h4>
+<p>By default Clustal Omega uses a sampling method called mBed to speed up the guide tree calculations so a traditional tree is not shown. To create a phylogenetic tree go to the Phylogenetic Tree tab in the results.</p>
+<h4 id="how-do-i-downloadsave-the-phylogenetic-tree">How do I download/save the phylogenetic tree?</h4>
+<p>The tree data can be saved by clicking the 'View Phylogetic Tree file' button or by clicking the tree link in the Results Summary tab. Using this data you can recreate the tree in any tree viewing software that takes Newick format tree data.</p>
+<p>The tree image cannot be saved directly as it is a dynamic java-driven interface, however you can take a screenshot and then save this in an image editing program, or as mentioned above use the tree data to recreate the tree in another tree viewing program and save it from there.</p>
+<h4 id="how-can-i-view-my-tree-after-ive-downloaded-it">How can I view my tree after I've downloaded it?</h4>
+<p>The tree data is in the widely used Newick format, there are several online or standalone tree viewing programs available that can take this and recreate the tree from this data.</p>
+<h4 id="how-long-are-results-stored-at-embl-ebi">How long are results stored at EMBL-EBI?</h4>
+<p>Results are stored at EMBL-EBI for a week from the date of job submission and can be accessed via https://www.ebi.ac.uk/Tools/services/web/toolresult.ebi?jobId=<JOBID>.</p>
+<h4 id="what-do-the-consensus-symbols-mean-in-the-alignment">What do the consensus symbols mean in the alignment?</h4>
+<p>An <code>*</code> (asterisk) indicates positions which have a single, fully conserved residue.</p>
+<p>A <code>:</code> (colon) indicates conservation between groups of strongly similar properties as below - roughly equivalent to scoring &gt; 0.5 in the Gonnet PAM 250 matrix:</p>
+<p>STA
+NEQK
+NHQK
+NDEQ
+QHRK
+MILV
+MILF
+HY
+FYW</p>
+<p>A <code>.</code> (period) indicates conservation between groups of weakly similar properties as below - roughly equivalent to scoring =&lt; 0.5 and &gt; 0 in the Gonnet PAM 250 matrix:</p>
+<p>CSA
+ATV
+SAG
+STNK
+STPA
+SGND
+SNDEQK
+NDEQHK
+NEQHRK
+FVLIM
+HFY</p>
+<p>Note that TV is included in the weaker scoring groups despite scoring 0.0 in the PAM 250 matrix, this is because it is a fairly common substitution as they are both beta-branched. In fully buried residues that is at the cost of a hydrogen bond. In fact, being relatively gentle, this substitution has been used in the past to make TS mutants. (Information courtesy of Toby Gibson).</p>
+<p>The same symbols display for DNA/RNA alignments, so while * (asterisk) characters are still useful, the other characters should be ignored for DNA/RNA alignments.</p>
+<h4 id="why-do-i-get-a-raw-tool-output-page">Why do I get a 'Raw Tool Output' page?</h4>
+<p>This happens when we can't parse the results of your Clustal Omega job - usually because the job has failed for some reason. Have a look at the links on the page, especially the Tool Error Details, for clues as to why this might have happened, and check your input for errors.</p>
+<h4 id="why-do-i-get-a-job-not-found-page">Why do I get a 'Job not found' page?</h4>
+<p>This happens when we can't find the job that you have requested. Normally it's a result of trying to look at the page over a week after the job was submitted, so the data is no longer available at EMBL-EBI. If you've copied the URL from a recent email job, check for any mistakes in the link.</p>
+<h4 id="why-do-i-see-java-is-required">Why do I see 'Java is required'?</h4>
+<p>Some of the options for Clustal Omega results pages require Java to work properly. If Java isn't installed with your browser or it doesn't have permission to run (for example it has been disabled due to being out of date) then there may be some results options missing, for example the button to launch Jalview or the display of trees.</p>
+<p>To update your version of Java go to the <a href="https://java.com/en/download/index.jsp">Java.com download page</a>.</p>
+<h4 id="what-does-the-error-click-message-mean-in-the-jalview-box">What does the 'Error. Click' message mean in the Jalview box?</h4>
+<p>Jalview relies on Java, which requires that applications present correct certificates for security reasons. If the Jalview program doesn't have a currently valid certificate then it will be prevented from running and this error will remain until we recieve an update from the author.</p>
+<p>To still run Jalview with this error you will need to go to the <a href="https://www.jalview.org/">Jalview website</a> and run the desktop version of the program.
+Top</p>
+<h4 id="how-to-interpret-the-resultant-tree">How to interpret the resultant tree?</h4>
+<p>The values shown in the tree represent the "length" of the branches, which is an indication for evolutionary distance between the sequence, i.e these numbers represent the amount of genetic change.Generally, the larger the number, the larger the amount of genetic change.</p>
+<p>During the construction of the tree, the algorithm takes the aligned sequences and builds a sequence distance matrix that is then used to arrive at an "optimal" tree by a clustering method. The workflow will be like Unaligned sequences-&gt;Clustal Omega-&gt;Aligned sequences-&gt;Clustal Phylogeny-&gt;Phylogenetic tree + PIM</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../bioinformatics/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Bioinformatics FAQs" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Bioinformatics FAQs
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../phylogeny/" class="md-footer__link md-footer__link--next" aria-label="Next: Simple Phylogeny FAQs" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Simple Phylogeny FAQs
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 EMBL-EBI
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://wwwdev.ebi.ac.uk/Tools/jdispatcher/" target="_blank" rel="noopener" title="Job Dispatcher" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.4c2.2 20.4 3.3 41.8 3.3 64zm28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 21 58.2 27 94.7zm-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6zM8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zm186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6h116.7zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.6z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://ebi-jdispatcher.github.io/blog/" target="_blank" rel="noopener" title="Blog" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M192 32c0 17.7 14.3 32 32 32 123.7 0 224 100.3 224 224 0 17.7 14.3 32 32 32s32-14.3 32-32C512 128.9 383.1 0 224 0c-17.7 0-32 14.3-32 32zm0 96c0 17.7 14.3 32 32 32 70.7 0 128 57.3 128 128 0 17.7 14.3 32 32 32s32-14.3 32-32c0-106-86-192-192-192-17.7 0-32 14.3-32 32zm-96 16c0-26.5-21.5-48-48-48S0 117.5 0 144v224c0 79.5 64.5 144 144 144s144-64.5 144-144-64.5-144-144-144h-16v96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48V144z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://twitter.com/ebi_jdispatcher" target="_blank" rel="noopener" title="Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.sections", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.integrate"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      
+    
+  </body>
+</html>
