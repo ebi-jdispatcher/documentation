@@ -39,6 +39,7 @@ nav:
     - Using the webpages:
       - 'webpages.md'
       - Available databases: 'databases.md'
+      - Example formats: 'formats.md'
     - Programmatic access:
         - 'webservices.md'
     - FAQs:
